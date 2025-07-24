@@ -18,6 +18,14 @@ struct ContentView: View {
                 Text("This is the root view 🌳")
                     .font(.largeTitle)
                 
+                NavigationLink(destination: Text("You've arrived at a second view")) {
+                    
+                    Text("click me!")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                    
+                }//navigationlink
+                
             }//vstack
             
         }//navigationstack
