@@ -13,7 +13,7 @@ struct ContentView: View {
         
         NavigationStack {
             
-            VStack {
+            VStack(spacing: 20.0) {
                 
                 Text("This is the root view 🌳")
                     .font(.largeTitle)
