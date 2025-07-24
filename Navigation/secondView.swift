@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct secondView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        
+        Text("You've arrived to the second view!")
+        
+    }//body
+    
+}//struct
+
 
 #Preview {
     secondView()
-}
+}//preview
