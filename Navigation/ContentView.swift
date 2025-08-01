@@ -18,16 +18,23 @@ struct ContentView: View {
                 Text("This is the root view 🌳")
                     .font(.largeTitle)
                 
-                NavigationLink(destination: secondView()) {
-                    
-                    Text("click me!")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                    
-                }//navigationlink
+                    //.toolbar {
+                        
+                        NavigationLink(destination: secondView()) {
+                            
+                            Text("click me!")
+                                .font(.title)
+                                .fontWeight(.semibold)
+                            
+                        }//navigationlink
+                        
+                    //}//toolbar
                 
             }//vstack
-            
+         
+            .navigationTitle("root view")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
         }//navigationstack
         
     }//body
